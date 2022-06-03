@@ -20,5 +20,14 @@ namespace Garage
         {
             Console.WriteLine($"The {MainColor} Cessna flies overhead. Zoooooom!");
         }
+
+        public override void Turn(string direction)
+        {
+            Console.WriteLine($"The {MainColor} Cessna banks to the {direction}.");
+        }
+        public override void Stop()
+        {
+          Console.WriteLine($"The plane rolls down the runway for a mile and then stops.");
+        }
     }
 }

@@ -20,5 +20,14 @@ namespace Garage
         {
             Console.WriteLine($"The {MainColor} Tesla drives past. :: silence ::");
         }
+
+        public override void Turn(string direction)
+        {
+             Console.WriteLine($"The {MainColor} Tesla turns to the {direction}.");
+        }
+        public override void Stop()
+        {
+             Console.WriteLine($"The car gently rolls to a quiet stop.");
+        }
     }
 }

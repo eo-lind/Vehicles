@@ -12,18 +12,34 @@ namespace Garage
             Ram ram1500 = new Ram(26);
 
             fxs.MaximumOccupancy = 1;
-            modelS.MaximumOccupancy = 4;
-            mx410.MaximumOccupancy = 2;
-            ram1500.MaximumOccupancy = 4;
             fxs.MainColor = "black";
-            modelS.MainColor = "cherry red";
-            mx410.MainColor = "white";
-            ram1500.MainColor = "silver";
-
             fxs.Drive();
+            fxs.Turn("right");
+            fxs.Stop();
+
+            Console.WriteLine("\n-----------------------------------------\n");
+
+            modelS.MaximumOccupancy = 4;
+            modelS.MainColor = "cherry red";
             modelS.Drive();
+            modelS.Turn("left");
+            modelS.Stop();
+
+            Console.WriteLine("\n-----------------------------------------\n");
+
+            mx410.MaximumOccupancy = 2;
+            mx410.MainColor = "white";
             mx410.Drive();
+            mx410.Turn("left");
+            mx410.Stop();
+            
+            Console.WriteLine("\n-----------------------------------------\n");
+
+            ram1500.MaximumOccupancy = 4;
+            ram1500.MainColor = "silver";
             ram1500.Drive();
+            ram1500.Turn("left");
+            ram1500.Stop();
         }
     }
 }
